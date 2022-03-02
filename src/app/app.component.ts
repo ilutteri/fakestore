@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavItem } from './class/nav-item';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ejStoreApi';
+  items: NavItem[] = [
+  {
+    label: 'Inicio',
+    link:''
+  },
+  {
+    label: 'Usuarios',
+    link: 'usuarios'
+  },
+  {
+    label: 'Login',
+    link: 'login'
+  },
+  {
+    label: 'Error',
+    link: 'error'
+  }
+]
 }
