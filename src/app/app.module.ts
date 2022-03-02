@@ -12,7 +12,8 @@ import { CarritoService } from './services/carrito.service';
 import { ProductoService } from './services/producto.service';
 import { UserService } from './services/user.service';
 
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ProdCardComponent } from './components/prod-card/prod-card.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http'
     ProductosComponent,
     UsuariosComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    ProdCardComponent
   ],
   imports: [
     BrowserModule,
